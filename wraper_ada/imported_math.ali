@@ -1,0 +1,72 @@
+V "GNAT Lib v13"
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+
+U imported_math%s	imported_math.ads	aa750fcd NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20240521074738 76789da1 ada%s
+D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
+D imported_math.ads	20260401164622 f62f63da imported_math%s
+D interfac.ads		20240521074738 15f799c2 interfaces%s
+D i-c.ads		20240521074738 5c5a6c17 interfaces.c%s
+D system.ads		20240521074738 426dafb8 system%s
+D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
+D s-parame.ads		20251218205951 1f39ba92 system.parameters%s
+D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
+G a e
+G c Z s s [c_gcd imported_math 19 13 none]
+G c Z s s [c_spd imported_math 22 13 none]
+G c Z s s [c_euler imported_math 25 13 none]
+G c Z s s [c_solve_diophantine imported_math 28 13 none]
+G c Z s s [rust_gcd imported_math 31 13 none]
+G c Z s s [rust_spd imported_math 34 13 none]
+G c Z s s [rust_euler imported_math 37 13 none]
+G c Z s s [rust_solve_diophantine imported_math 40 13 none]
+G c Z s s [c_diophantine_resultIP imported_math 5 9 none]
+G c Z s s [rust_diophantine_resultIP imported_math 12 9 none]
+X 3 imported_math.ads
+3K9*Imported_Math 43l5 43e18
+5R9*C_Diophantine_Result 9e14 10r26 28r60
+6b7*Has_Solution{5|92E9}
+7i7*X{5|57I9}
+8i7*Y{5|57I9}
+12R9*Rust_Diophantine_Result 16e14 17r26 40r63
+13i7*Has_Solution{5|57I9}
+14i7*X{5|57I9}
+15i7*Y{5|57I9}
+19V13*C_Gcd{5|66M9} 19>20 19>23 20b<c,gcd>22
+19m20 A{5|66M9}
+19m23 B{5|66M9}
+22V13*C_Spd{5|66M9} 22>20 23b<c,smallest_prime_divisor>22
+22m20 N{5|66M9}
+25V13*C_Euler{5|66M9} 25>22 26b<c,euler>22
+25m22 N{5|66M9}
+28V13*C_Solve_Diophantine{5R9} 28>34 28>37 28>40 29b<c,solve_diophantine>22
+28i34 A{5|57I9}
+28i37 B{5|57I9}
+28i40 C_Val{5|57I9}
+31V13*Rust_Gcd{5|66M9} 31>23 31>26 32b<c,gcd_c>22
+31m23 A{5|66M9}
+31m26 B{5|66M9}
+34V13*Rust_Spd{5|66M9} 34>23 35b<c,smallest_prime_divisor_c>22
+34m23 N{5|66M9}
+37V13*Rust_Euler{5|66M9} 37>25 38b<c,euler_c>22
+37m25 N{5|66M9}
+40V13*Rust_Solve_Diophantine{12R9} 40>37 40>40 40>43 41b<c,solve_diophantine_c>22
+40i37 A{5|57I9}
+40i40 B{5|57I9}
+40i43 C_Val{5|57I9}
+X 4 interfac.ads
+38K9*Interfaces 3|1r6 1r24 4|232e15
+X 5 i-c.ads
+29K20*C 3|1w17 1r35 5|597e17
+57I9*int<integer> 3|7r22 8r22 13r22 14r22 15r22 28r48 40r51
+66M9*unsigned 3|19r27 19r44 22r24 22r41 25r26 25r43 31r30 31r47 34r27 34r44
+. 37r29 37r46
+92B9*C_bool<boolean> 3|6r22
+

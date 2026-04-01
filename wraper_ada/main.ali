@@ -1,0 +1,149 @@
+V "GNAT Lib v13"
+M P W=b
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+
+U main%b		main.adb		0b5e537b NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W imported_math%s	imported_math.ads	imported_math.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W math_ada%s		math_ada.ads		math_ada.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+
+D ada.ads		20240521074738 76789da1 ada%s
+D a-assert.ads		20240521074737 ba465f5c ada.assertions%s
+D a-except.ads		20240521074738 2a7d8d70 ada.exceptions%s
+D a-inteio.ads		20240521074738 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20240521074738 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20240521074738 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20240521074738 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20240521074738 711e0174 ada.numerics.big_numbers.big_integers_ghost%s
+D a-stream.ads		20240521074738 119b8fb3 ada.streams%s
+D a-string.ads		20240521074738 90ac6797 ada.strings%s
+D a-sttebu.ads		20240521074738 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240521074738 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240521074738 9eaa38c6 ada.tags%s
+D a-textio.ads		20240521074738 5c2c6153 ada.text_io%s
+D a-tiinio.ads		20240521074738 e58fa6fb ada.text_io.integer_io%s
+D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
+D imported_math.ads	20260401164622 f62f63da imported_math%s
+D interfac.ads		20240521074738 15f799c2 interfaces%s
+D i-c.ads		20240521074738 5c5a6c17 interfaces.c%s
+D i-cstrea.ads		20240521074738 e53d8b8e interfaces.c_streams%s
+D main.adb		20260401170329 61654012 main%b
+D math_ada.ads		20260401165210 6a29f453 math_ada%s
+D system.ads		20240521074738 426dafb8 system%s
+D s-assert.ads		20240521074738 9c4520c7 system.assertions%s
+D s-casuti.ads		20240521074738 cf13d755 system.case_util%s
+D s-conca4.ads		20240521074738 33f85f3e system.concat_4%s
+D s-crtl.ads		20240521074738 8a0692f8 system.crtl%s
+D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240521074738 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20240521074738 c707dfd0 system.image_i%s
+D s-imgint.ads		20240521074738 d4a52a9b system.img_int%s
+D s-parame.ads		20251218205951 1f39ba92 system.parameters%s
+D s-putima.ads		20240521074738 17291fe4 system.put_images%s
+D s-secsta.ads		20240521074738 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240521074738 df77073e system.soft_links%s
+D s-stache.ads		20240521074738 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240521074738 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20240521074738 8f5a9db6 system.storage_elements%b
+D s-traent.ads		20240521074738 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240521074738 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20240521074738 1f610d7a system.val_int%s
+D s-valuns.ads		20240521074738 e8a1f424 system.val_uns%s
+D s-valuti.ads		20240521074738 fcd603d8 system.val_util%s
+D s-valuei.ads		20240521074738 11081e09 system.value_i%s
+D s-vaispe.ads		20240521074738 44130d39 system.value_i_spec%s
+D s-valueu.ads		20240521074738 18770347 system.value_u%s
+D s-vauspe.ads		20240521074738 a67b2f28 system.value_u_spec%s
+D s-wchcon.ads		20240521074738 d9032363 system.wch_con%s
+D s-widuns.ads		20240521074738 866a5800 system.wid_uns%s
+D s-widthu.ads		20240521074738 b32f15e2 system.width_u%s
+G a e
+G c Z b b [main standard 8 11 none]
+G r c none [main standard 8 11 none] [gcd math_ada 9 13 none]
+G r c none [main standard 8 11 none] [smallest_prime_divisor math_ada 11 13 none]
+G r c none [main standard 8 11 none] [euler math_ada 13 13 none]
+G r c none [main standard 8 11 none] [solve_diophantine math_ada 15 13 none]
+G r c none [main standard 8 11 none] [c_gcd imported_math 19 13 none]
+G r c none [main standard 8 11 none] [c_spd imported_math 22 13 none]
+G r c none [main standard 8 11 none] [c_euler imported_math 25 13 none]
+G r c none [main standard 8 11 none] [c_solve_diophantine imported_math 28 13 none]
+G r c none [main standard 8 11 none] [rust_gcd imported_math 31 13 none]
+G r c none [main standard 8 11 none] [rust_spd imported_math 34 13 none]
+G r c none [main standard 8 11 none] [rust_euler imported_math 37 13 none]
+G r c none [main standard 8 11 none] [rust_solve_diophantine imported_math 40 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 21|1r6 1r31 2r6 2r31
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[15|46] 21|2w10 2r35
+X 14 a-textio.ads
+58K13*Text_IO 787e16 21|1w10 1r35
+282U14*New_Line 21|23s91 24s92 25s74 32s4 35s76 36s69 37s73 45s4 48s82 49s75
+. 50s79 57s4
+519U14*Put 21|23s4 24s4 25s4 35s4 36s4 37s4 48s4 49s4 50s4
+566U14*Put_Line 21|22s4 28s7 30s7 34s4 41s7 43s7 47s4 53s7 55s7
+X 15 a-tiinio.ads
+83U14*Put 21|23s23[4|18] 24s23[4|18] 25s25[4|18] 35s21[4|18] 36s21[4|18]
+. 37s23[4|18] 48s24[4|18] 49s24[4|18] 50s26[4|18]
+X 17 imported_math.ads
+3K9*Imported_Math 43e18 21|6w6 18r15 19r15 35r35 36r35 37r37 39r13 48r38
+. 49r38 50r40 51r16
+5R9*C_Diophantine_Result 9e14 21|18r29
+6b7*Has_Solution{19|92E9} 21|40r13
+7i7*X{19|57I9} 21|41r72
+8i7*Y{19|57I9} 21|41r119
+12R9*Rust_Diophantine_Result 16e14 21|19r29
+13i7*Has_Solution{19|57I9} 21|52r16
+14i7*X{19|57I9} 21|53r78
+15i7*Y{19|57I9} 21|53r128
+19V13*C_Gcd{19|66M9} 21|35s49
+22V13*C_Spd{19|66M9} 21|36s49
+25V13*C_Euler{19|66M9} 21|37s51
+28V13*C_Solve_Diophantine{5R9} 21|39s27
+31V13*Rust_Gcd{19|66M9} 21|48s52
+34V13*Rust_Spd{19|66M9} 21|49s52
+37V13*Rust_Euler{19|66M9} 21|50s54
+40V13*Rust_Solve_Diophantine{12R9} 21|51s30
+X 18 interfac.ads
+38K9*Interfaces 232e15 21|3r6 3r31
+X 19 i-c.ads
+29K20*C 597e17 21|3w17 3r42
+57I9*int<integer> 21|13r21 14r21 15r21
+66M9*unsigned 21|10r21 11r21 12r21
+92B9*C_bool<boolean>
+X 21 main.adb
+8U11*Main 8b11 58l5 58t9
+10m4 Val_A{19|66M9} 23r60 35r56 48r62
+11m4 Val_B{19|66M9} 23r77 35r63 36r56 37r60 48r69 49r62 50r66
+12m4 N{19|66M9} 24r82 25r64
+13i4 Da{19|57I9} 26r52 39r48 51r54
+14i4 Db{19|57I9} 26r66 39r52 51r58
+15i4 Dc{19|57I9} 26r80 39r56 51r62
+17r4 Res_Ada{22|2R9} 26m4 27r7 28r59 28r98
+18r4 Res_C{17|5R9} 39m4 40r7 41r66 41r113
+19r4 Res_Rust{17|12R9} 51m4 52r7 53r69 53r119
+X 22 math_ada.ads
+1K9*Math_ada 21|5w6 17r15 23r37 24r37 25r39 26r15 22|16e13
+2R9*Diophantine_Result 21|17r24 22|6e14
+3b7*Has_Solution{boolean} 21|27r15
+4i7*X{integer} 21|28r67
+5i7*Y{integer} 21|28r106
+9V13*Gcd{natural} 21|23s46
+11V13*Smallest_Prime_Divisor{natural} 21|24s46
+13V13*Euler{natural} 21|25s48
+15V13*Solve_Diophantine{2R9} 21|26s24
+
