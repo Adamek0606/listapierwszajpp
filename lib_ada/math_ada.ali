@@ -1,0 +1,71 @@
+V "GNAT Lib v13"
+A -fPIC
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_LONG_LONG_INTEGERS
+RV NO_RECURSION
+
+U math_ada%b		math_ada.adb		8229bbb3 NE OO PK
+
+U math_ada%s		math_ada.ads		6a29f453 EE NE OO PK
+
+D math_ada.ads		20260401144023 6a29f453 math_ada%s
+D math_ada.adb		20260401144014 e8004fe0 math_ada%b
+D system.ads		20240521074738 426dafb8 system%s
+G a e
+G c Z s b [extended_gcd math_ada 7 14 none]
+G c Z s b [gcd math_ada 9 13 none]
+G c Z s b [smallest_prime_divisor math_ada 11 13 none]
+G c Z s b [euler math_ada 13 13 none]
+G c Z s b [solve_diophantine math_ada 15 13 none]
+G c Z s s [diophantine_resultIP math_ada 2 9 none]
+X 1 math_ada.ads
+1K9*Math_ada 16l5 16e13 2|1b14 133l5 133t13
+2R9*Diophantine_Result 6e14 15r58 2|82r58 83r16
+3b7*Has_Solution{boolean} 2|83m39 126m14
+4i7*X{integer} 2|83m62 127m14
+5i7*Y{integer} 2|83m70 128m14
+7U14*Extended_Gcd 7>28 7>31 7<44 7<47 7<50 2|66b14 76s7 80l8 80t20 94s7
+7i28 A{integer} 2|66b28 72r15 76r24 79r18
+7i31 B{integer} 2|66b31 69r10 76r21 76r30 79r22
+7i44 X{integer} 2|66b47 70m10 78m7
+7i47 Y{integer} 2|66b50 71m10 79m7
+7i50 D{integer} 2|66b53 72m10 76m41
+9V13*Gcd{natural} 9>18 9>21 2|3b13 14l8 14t11
+9i18 A{natural} 2|3b18 4r27
+9i21 B{natural} 2|3b21 5r27
+11V13*Smallest_Prime_Divisor{natural} 11>37 2|16b13 35l8 35t30
+11i37 N{natural} 2|16b37 19r10 23r10 27r22 28r13 34r14
+13V13*Euler{natural} 13>20 2|37b13 64l8 64t13
+13i20 N{natural} 2|37b20 40r27
+15V13*Solve_Diophantine{2R9} 15>32 15>35 15>38 2|82b13 131l8 131t25
+15i32 A{integer} 2|82b32 90r10 94r21 106r36
+15i35 B{integer} 2|82b35 90r20 94r24 105r36
+15i38 C{integer} 2|82b38 96r10 100r12
+X 2 math_ada.adb
+4i7 Temp_A{natural} 10r20 11m10 13r14
+5i7 Temp_B{natural} 8r13 9r20 10m10 10r31
+6i7 Temp{natural} 9m10 11r20
+17i7 I{natural} 27r13 27r17 28r19 29r20 31m10 31r15
+38i7 Result{natural} 46m7 54m13 54r23 54r32 60m10 60r20 60r29 63r14
+39i7 P{natural} 47m7 49r13 49r17 50r24 51r30 52r35 54r41 56m10 56r15
+40i7 Temp_N{natural} 42r10 46r17 49r22 50r13 51r19 52m16 52r26 59r10 60r38
+67i7 X1{integer} 76m33 79r12
+67i11 Y1{integer} 76m37 78r12 79r27
+83r7 Result{1|2R9} 91r17 97r17 126m7 127m7 128m7 130r14
+84i7 X0{integer} 94m27 102r32
+84i11 Y0{integer} 94m31 103r33
+84i15 D{integer} 94m35 96r16 100r16 105r40 106r40
+85i7 K{integer} 100m7 102r57 103r58
+87i7 XP{long_long_integer} 102m7 108r10 109r18 111r18 127r28
+87i11 YP{long_long_integer} 103m7 114r10 115r18 117r18 128r28
+87i15 Step_X{long_long_integer} 105m7 109r23 109r37 111r24 127r50
+87i23 Step_Y{long_long_integer} 106m7 115r23 115r37 117r24 128r50
+88i7 TX{long_long_integer} 109m10 111m10 120r10 121r28
+88i11 TY{long_long_integer} 115m10 117m10 120r15 123r28
+88i15 How_Much_Steps{long_long_integer} 121m10 123m10 127r33 128r33
+
