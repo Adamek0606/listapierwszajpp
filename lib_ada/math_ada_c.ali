@@ -1,0 +1,76 @@
+V "GNAT Lib v13"
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+
+U math_ada_c%b		math_ada_c.adb		4296ec82 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+U math_ada_c%s		math_ada_c.ads		78370b68 EE NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W math_ada%s		math_ada.adb		math_ada.ali
+
+D ada.ads		20240521074738 76789da1 ada%s
+D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20240521074738 15f799c2 interfaces%s
+D i-c.ads		20240521074738 5c5a6c17 interfaces.c%s
+D math_ada.ads		20260401161903 6a29f453 math_ada%s
+D math_ada_c.ads	20260401162006 4e44932c math_ada_c%s
+D math_ada_c.adb	20260401162012 508813b9 math_ada_c%b
+D system.ads		20240521074738 426dafb8 system%s
+D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
+D s-parame.ads		20251218205951 1f39ba92 system.parameters%s
+D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
+G a e
+G c Z s b [gcd_c math_ada_c 15 13 none]
+G c Z s b [spd_c math_ada_c 18 13 none]
+G c Z s b [euler_c math_ada_c 21 13 none]
+G c Z s b [solve_diophantine_c math_ada_c 24 13 none]
+G c Z s s [c_diophantine_resultIP math_ada_c 7 9 none]
+G r c none [gcd_c math_ada_c 15 13 none] [gcd math_ada 9 13 none]
+G r c none [spd_c math_ada_c 18 13 none] [smallest_prime_divisor math_ada 11 13 none]
+G r c none [euler_c math_ada_c 21 13 none] [euler math_ada 13 13 none]
+G r c none [solve_diophantine_c math_ada_c 24 13 none] [solve_diophantine math_ada 15 13 none]
+X 3 interfac.ads
+38K9*Interfaces 232e15 6|1r6 1r24 7|1r6 1r24
+X 4 i-c.ads
+29K20*C 597e17 6|1w17 1r35 7|1w17 1r35
+57I9*int<integer> 6|8r22 9r22 10r22 24r44 7|20r44 33r18 34r18
+66M9*unsigned 6|15r27 15r44 18r24 18r41 21r26 21r43 7|5r27 5r44 7r14 10r24
+. 10r41 12r14 15r26 15r43 17r14
+X 5 math_ada.ads
+1K9*Math_ada 16e13 6|2w6 7|7r24 12r24 17r24 21r17 25r18
+2R9*Diophantine_Result 6e14 7|21r26
+3b7*Has_Solution{boolean} 7|28r18
+4i7*X{integer} 7|33r31
+5i7*Y{integer} 7|34r31
+9V13*Gcd{natural} 7|7s33
+11V13*Smallest_Prime_Divisor{natural} 7|12s33
+13V13*Euler{natural} 7|17s33
+15V13*Solve_Diophantine{2R9} 7|25s27
+X 6 math_ada_c.ads
+4K9*Math_Ada_C 27l5 27e15 7|3b14 39l5 39t15
+7R9*C_Diophantine_Result 11e14 12r26 24r56 7|20r56 22r17
+8i7*Has_Solution{4|57I9} 7|29m16 31m16
+9i7*X{4|57I9} 7|33m13
+10i7*Y{4|57I9} 7|34m13
+15V13*Gcd_C{4|66M9} 15>20 15>23 16i<c,ada_gcd_c>22 7|5b13 8l8 8t13
+15m20 A{4|66M9} 7|5b20 7r47
+15m23 B{4|66M9} 7|5b23 7r60
+18V13*Spd_C{4|66M9} 18>20 19i<c,ada_spd_c>22 7|10b13 13l8 13t13
+18m20 N{4|66M9} 7|10b20 12r66
+21V13*Euler_C{4|66M9} 21>22 22i<c,ada_euler_c>22 7|15b13 18l8 18t15
+21m22 N{4|66M9} 7|15b22 17r49
+24V13*Solve_Diophantine_C{7R9} 24>34 24>37 24>40 25i<c,ada_solve_diophantine_c>22
+. 7|20b13 37l8 37t27
+24i34 A{4|57I9} 7|20b34 25r55
+24i37 B{4|57I9} 7|20b37 25r68
+24i40 C{4|57I9} 7|20b40 25r81
+X 7 math_ada_c.adb
+21r7 Res_Ada{5|2R9} 25m7 28r10 33r23 34r23
+22r7 Res_C{6|7R9} 29m10 31m10 33m7 34m7 36r14
+
