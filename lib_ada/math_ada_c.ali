@@ -1,4 +1,5 @@
 V "GNAT Lib v13"
+A -fPIC
 A -mtune=generic
 A -march=x86-64
 P ZX
@@ -18,9 +19,9 @@ D ada.ads		20240521074738 76789da1 ada%s
 D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20240521074738 15f799c2 interfaces%s
 D i-c.ads		20240521074738 5c5a6c17 interfaces.c%s
-D math_ada.ads		20260401161903 6a29f453 math_ada%s
-D math_ada_c.ads	20260401162006 4e44932c math_ada_c%s
-D math_ada_c.adb	20260401162012 508813b9 math_ada_c%b
+D math_ada.ads		20260406123840 6a29f453 math_ada%s
+D math_ada_c.ads	20260406123840 4e44932c math_ada_c%s
+D math_ada_c.adb	20260406123840 508813b9 math_ada_c%b
 D system.ads		20240521074738 426dafb8 system%s
 D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
 D s-parame.ads		20251218205951 1f39ba92 system.parameters%s

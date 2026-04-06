@@ -1,4 +1,5 @@
 V "GNAT Lib v13"
+A -fPIC
 A -mtune=generic
 A -march=x86-64
 P ZX
@@ -12,8 +13,8 @@ U math_ada%b		math_ada.adb		8229bbb3 NE OO PK
 
 U math_ada%s		math_ada.ads		6a29f453 EE NE OO PK
 
-D math_ada.ads		20260401161903 6a29f453 math_ada%s
-D math_ada.adb		20260401161904 e8004fe0 math_ada%b
+D math_ada.ads		20260406123840 6a29f453 math_ada%s
+D math_ada.adb		20260406123840 e8004fe0 math_ada%b
 D system.ads		20240521074738 426dafb8 system%s
 G a e
 G c Z s b [extended_gcd math_ada 7 14 none]
